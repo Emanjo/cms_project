@@ -1,3 +1,81 @@
+/* ====== Base styles ===== */
+
 * {
   box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+  background: #587689;
+}
+
+.container {
+  margin: 0 1em;
+}
+
+header,footer, main {
+  padding: 20px 0;
+}
+
+header,footer {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header a, footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ====== Header styles ===== */
+
+header {
+  text-align: center;
+}
+
+header li {
+  padding: 10px;
+  background: #FF6B6B;
+  margin-top: 10px;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+/* ====== Main content styles ===== */
+
+.profile-picture {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.intro {
+  text-align: center;
+  max-width: 500px;
+}
+
+.intro h1 {
+  margin-bottom: 0;
+}
+
+.intro p {
+  border-top: #FF6B6B 3px solid;
+  padding-top: 15px;
+}
+
+
+/* ====== Footer styles ===== */
+
+footer {
+  background: #587689;
+}
+
+.footer-logo {
+  width: 100px;
 }
