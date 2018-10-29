@@ -79,3 +79,50 @@ footer {
 .footer-logo {
   width: 100px;
 }
+
+/* ====== Responsive styles ===== */
+
+@media (min-width: 550px) {
+
+  /* ====== Header styles ===== */
+
+  header {
+    min-height: 300px;
+  }
+
+  header nav ul {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin-left: 10px;
+    background: none;
+  }
+  header nav ul li:hover {
+    border-left: #FF6B6B 1px solid;
+  }
+
+  .container-header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .container-header a {
+    justify-self: start;
+  }
+
+  .container-header nav {
+    justify-self: end;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  /* ====== Base styles ===== */
+
+  .container {
+    margin: 0 20%;
+  }
+
+}
