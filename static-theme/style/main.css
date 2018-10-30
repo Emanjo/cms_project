@@ -76,6 +76,10 @@ main h1 {
   font-size: 1.6em;
 }
 
+.intro-desktop {
+  display: none;
+}
+
 .post-pic {
   object-fit: cover;
   width: 100%;
@@ -159,19 +163,30 @@ footer ul li {
     justify-content: space-between;
   }
 
-  .container {
-    position: relative;
-  }
+  /* ====== Main content styles ===== */
 
   .intro {
+    text-align: center;
     background: none;
     position: absolute;
     width: 500px;
     height: 400px;
     color: black;
-    top: 75px;
+    top: -135px;
     left: calc(50% - 250px);
     overflow: hidden;
+  }
+
+  .intro-mobile {
+    display: none;
+  }
+
+  .intro-desktop {
+    display: block;
+  }
+
+  .padding-intro-bottom {
+    padding-bottom: 230px;
   }
 
   .profile-picture {
@@ -180,27 +195,26 @@ footer ul li {
     border: solid white 5px;
   }
 
-  /* ====== Main content styles ===== */
-
   main {
-    padding-top: 250px;
+    position: relative;
   }
 
   .latest-posts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 0 -5px;
   }
 
   .post {
     margin: 0 5px;
+    width: 30%;
   }
 
   .footer {
     flex-direction: row;
     justify-content: space-between;
   }
-
 
   footer ul {
     flex-direction: column;
@@ -218,7 +232,6 @@ footer ul li {
 
   .container {
     margin: 0 15%;
-    max-width: 1000px;
   }
 
 }
