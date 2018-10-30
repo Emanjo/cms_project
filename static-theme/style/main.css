@@ -104,6 +104,25 @@ main h1 {
   color: white;
   border: none;
 }
+
+.single-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-post img {
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.single-post h1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.single-post small {
+  margin-top: 10px;
+}
 /* ====== Footer styles ===== */
 
 footer {
