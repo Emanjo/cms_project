@@ -107,10 +107,26 @@ main h1 {
 
 footer {
   background: #587689;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-logo {
   width: 100px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 -5px;
+  border-top: #FF6B6B solid 2px;
+  padding-top: 10px;
+}
+
+footer ul li {
+  margin: 0 5px;
 }
 
 /* ====== Responsive styles ===== */
