@@ -107,11 +107,14 @@ main h1 {
 
 footer {
   background: #587689;
+}
+
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
+
 
 .footer-logo {
   width: 100px;
@@ -139,29 +142,24 @@ footer ul li {
     min-height: 300px;
   }
 
-  header nav ul {
+  header ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 
-  header nav ul li {
-    margin-left: 10px;
+  header li {
+    margin: 0;
     background: none;
   }
-  header nav ul li:hover {
+
+  header li:hover {
     border-left: #FF6B6B 1px solid;
   }
 
   .container-header {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-
-  .container-header a {
-    justify-self: start;
-  }
-
-  .container-header nav {
-    justify-self: end;
+    display: flex;
+    justify-content: space-between;
   }
 
   .container {
@@ -200,6 +198,20 @@ footer ul li {
     margin: 0 5px;
   }
 
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+  footer ul {
+    flex-direction: column;
+    justify-content: start;
+    border-top: none;
+    border-left: #FF6B6B solid 2px;
+    padding-top: 0;
+  }
+
 }
 
 @media (min-width: 1000px) {
@@ -209,12 +221,6 @@ footer ul li {
   .container {
     margin: 0 15%;
     max-width: 1000px;
-  }
-
-  /* ====== Main content styles ===== */
-
-  .latest-posts {
-    grid-template-columns: 33% 33% 33%;
   }
 
 }
