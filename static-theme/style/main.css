@@ -123,6 +123,19 @@ main h1 {
 .single-post small {
   margin-top: 10px;
 }
+
+.sidebar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-post-item {
+  width: 100%;
+}
+
+.sidebar {
+  display: none;
+}
 /* ====== Footer styles ===== */
 
 footer {
@@ -229,6 +242,18 @@ footer ul li {
     margin: 0 5px;
     width: 30%;
   }
+
+  .single-post-item {
+    width: 60%;
+  }
+
+  .sidebar {
+    display: block;
+    width: 30%;
+    border: solid gray 1px;
+  }
+
+  /* ====== Footer styles ===== */
 
   .footer {
     flex-direction: row;
