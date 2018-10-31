@@ -5,6 +5,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+main {
+  min-height: 60vh;
+}
+
 .container {
   margin: 0 1em;
 }
@@ -135,6 +139,7 @@ main h1 {
 
 .sidebar {
   display: none;
+  padding: 20px;
 }
 /* ====== Footer styles ===== */
 
