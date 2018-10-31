@@ -6,7 +6,7 @@
 }
 
 main {
-  min-height: 60vh;
+  min-height: 53.5vh;
 }
 
 .container {
@@ -100,7 +100,7 @@ main h1 {
   margin-top: 10px;
 }
 
-.post button {
+.post-button {
   margin-bottom: 30px;
   border-radius: 5px;
   padding: 10px;
@@ -140,6 +140,11 @@ main h1 {
 .sidebar {
   display: none;
   padding: 20px;
+}
+
+.error {
+  text-align: center;
+
 }
 /* ====== Footer styles ===== */
 
