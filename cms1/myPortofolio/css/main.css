@@ -1,0 +1,374 @@
+/* ====== Base styles ===== */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  min-height: 53.5vh;
+  padding: 0;
+  padding-top: 20px;
+}
+
+.container {
+  margin: 0 1em;
+}
+
+header,footer {
+  padding: 20px 0;
+}
+
+header,footer {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header a, footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* ====== Header styles ===== */
+
+header {
+  text-align: center;
+  background: #587689;
+}
+
+header li {
+  padding: 10px;
+  background: #FF6B6B;
+  margin-top: 10px;
+}
+
+.header-logo {
+  width: 150px;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro {
+  max-width: 500px;
+  margin: 20px auto 0;
+  background: #2b3d49;
+  padding: 20px;
+}
+
+.intro h1 {
+  margin-bottom: 0;
+}
+
+.intro p {
+  border-top: #FF6B6B 3px solid;
+  padding-top: 15px;
+}
+
+/* ====== Main content styles ===== */
+main h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+main h1 {
+  margin-top: 0;
+}
+
+.portfolio-items-container {
+  background: #efefef;
+  padding: 40px;
+}
+
+.intro-desktop {
+  display: none;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.portfolio a {
+  margin: 0 auto;
+}
+
+.post-pic {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+  object-fit:  contain;
+}
+
+.post h1 {
+  margin: 20px 0;
+  font-weight: lighter;
+
+}
+
+.post p {
+  font-weight: lighter;
+}
+
+.post-button {
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #FF6B6B;
+  color: white;
+  border: none;
+}
+
+.single-post {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.single-post img {
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.single-post h1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.single-post small {
+  margin-top: 10px;
+}
+
+.single-post small, h1 {
+  text-align: center;
+}
+
+.sidebar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-post-item {
+  width: 100%;
+}
+
+.sidebar {
+  display: none;
+}
+
+.error {
+  text-align: center;
+
+}
+
+.warning {
+  border: red solid 2px;
+  background: #ffab83;
+  padding: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+  color: #fcff50;
+}
+
+.warning p {
+  margin: 0;
+}
+
+.widget {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: right;
+}
+
+.widget:last-child {
+  margin-bottom: 0;
+}
+
+.widget h1 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.widget li {
+  margin: 10px 0;
+}
+
+.widget a {
+  text-decoration: none;
+  color: #ffb100;
+}
+
+.widget a:hover {
+  text-decoration: underline;
+}
+
+.widget span {
+  font-size: 0.7em;
+  font-style: italic;
+  margin-left: 3px;
+}
+/* ====== Footer styles ===== */
+
+footer {
+  background: #587689;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 -5px;
+  border-top: #FF6B6B solid 2px;
+  padding-top: 10px;
+}
+
+.footer-ul li {
+  margin: 0 5px;
+}
+
+/* ====== Responsive styles ===== */
+
+@media (min-width: 550px) {
+
+  /* ====== Header styles ===== */
+
+  header {
+    min-height: 230px;
+  }
+
+  header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  header li {
+    margin: 0;
+    background: none;
+  }
+
+  header li:hover {
+    border-left: #FF6B6B 1px solid;
+  }
+
+  .container-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ====== Main content styles ===== */
+
+  .intro {
+    text-align: center;
+    background: none;
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    color: black;
+    top: -135px;
+    left: calc(50% - 250px);
+    overflow: hidden;
+  }
+
+  .intro-mobile {
+    display: none;
+  }
+
+  .intro-desktop {
+    display: block;
+  }
+
+  .padding-intro-bottom {
+    padding-bottom: 230px;
+  }
+
+  .profile-picture img {
+    width: 200px;
+    height: 200px;
+    border: solid white 5px;
+    margin-bottom: 10px;
+  }
+
+  main {
+    position: relative;
+  }
+
+  .latest-posts {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+  }
+
+  .post {
+    margin: 20px 5px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonlink-down {
+    margin-top: auto;
+  }
+
+  .single-post-item {
+    width: 60%;
+  }
+
+  .sidebar {
+    display: block;
+    width: 30%;
+  }
+
+  /* ====== Footer styles ===== */
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-ul {
+    flex-direction: column;
+    justify-content: start;
+    border-top: none;
+    border-left: #FF6B6B solid 2px;
+    padding-top: 0;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  /* ====== Base styles ===== */
+
+  .container {
+    margin: 0 15%;
+  }
+
+}
