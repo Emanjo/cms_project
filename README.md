@@ -5,4 +5,7 @@ Emil André Johannessen
 Module: CMS  
 Academic year: 2018-19  
 Education: Bachelor Applied Computer Science  
-Educational institution: Howest  
+Educational institution: Howest
+
+Live demos/working exapmles:
+- Wordpress: www.emanjo.no
