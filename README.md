@@ -7,5 +7,6 @@ Academic year: 2018-19
 Education: Bachelor Applied Computer Science  
 Educational institution: Howest
 
-Live demos/working exapmles:
+Live demos:
 - Wordpress: www.emanjo.no
+- Drupal: www.emanjo.no/drupal (not working, read docs)
